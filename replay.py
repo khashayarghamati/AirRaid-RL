@@ -29,13 +29,13 @@ save_dir.mkdir(parents=True)
 
 vid = VideoRecorder(env=env, path="vid.mp4")
 
-checkpoint = Path('agent_net_21.chkpt')
+checkpoint = Path('agent_net_96.chkpt')
 agent = Agent(state_dim=6*84*84, action_dim=env.action_space.n, save_dir=save_dir, checkpoint=checkpoint)
 agent.exploration_rate = agent.exploration_rate_min
 
 logger = MetricLogger(save_dir)
 
-episodes = 10
+episodes = 40
 
 for e in range(episodes):
 
@@ -44,7 +44,7 @@ for e in range(episodes):
         state = state[0]
     while True:
         env.render()
-        action = agent.act(state)
+        action = agent.action(state)
 
         next_state, reward, done, truncated, info = env.step(action)
         vid.capture_frame()
