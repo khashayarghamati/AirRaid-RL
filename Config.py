@@ -8,5 +8,5 @@ class Config:
     exploration_rate_min = 0.1
     discount_factor = 0.99
 
-    save_every = 5e5 * 2
+    save_every = 100
     total_episode = 40
