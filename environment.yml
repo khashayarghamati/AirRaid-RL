@@ -1,0 +1,14 @@
+name: airraid
+channels:
+  - defaults
+dependencies:
+  - pip=21.2.4
+  - python=3.9
+  - pip:
+      - torch==1.9.0
+      - gymnasium[atari,accept-rom-license]
+      - matplotlib==3.4.3
+      - opencv-python==4.5.3.56
+      - moviepy
+      - python-dotenv
+prefix: /opt/miniconda3/envs/airraid
