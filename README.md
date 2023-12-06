@@ -6,6 +6,9 @@ Welcome to the Reinforcement Learning project designed as a sample for Universit
 
 The purpose of this project is to provide a hands-on introduction to reinforcement learning concepts for students. It showcases the implementation of an RL model using the gymnasium environment, offering a practical insight into how RL algorithms can be applied to solve problems.
 
+
+![RESULT GIF](gif/airraid.gif)
+
 ## Key Components
 
 ### Agent
