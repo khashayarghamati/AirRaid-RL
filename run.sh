@@ -32,6 +32,6 @@ echo ------------------------------------------------------
 
 echo -n 'Running Model\n'
 
-python /home2/kg23aay/workspace/AirRaid/run.py
+python /home2/kg23aay/workspace/AirRaid-RL/run.py
 echo ------------------------------------------------------
 echo Job ends
